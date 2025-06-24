@@ -119,5 +119,31 @@
         <p class="footer__text">&copy; 2024 Around The U.S.</p>
       </footer>
     </section>
+    <div class="popup" id="edit-popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close-button"></button>
+        <form class="popup__form" name="edit-profile-form">
+          <h2 class="popup__title">Editar Perfil</h2>
+          <input
+            type="text"
+            class="popup__input"
+            name="name"
+            placeholder="Nombre"
+            id="profile-name"
+            required
+          />
+          <input
+            type="text"
+            class="popup__input"
+            name="job"
+            id="profile-job"
+            placeholder="Acerca de mí"
+            required
+          />
+          <button type="submit" class="popup__save-button">Guardar</button>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
